@@ -14,12 +14,14 @@
         tools:context=".MainActivity">
 
 
-    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+    <fragment android:layout_width="match_parent" android:layout_height="0dp"
                  android:layout_weight="1"
+              android:name="com.koziodigital.myapplication.screens.MainFragment"
     android:id="@+id/fragment_container"/>
 
-    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+    <fragment android:layout_width="match_parent" android:layout_height="0dp"
                  android:layout_weight="1"
+                 android:name="com.koziodigital.myapplication.screens.SecondFragment"
                  android:id="@+id/fragment_container_two"/>
 
     <Button android:layout_width="wrap_content" android:layout_height="wrap_content"

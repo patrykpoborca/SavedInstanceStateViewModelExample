@@ -7,8 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.koziodigital.myapplication.base.BaseFragment
 import com.koziodigital.myapplication.databinding.FrCounterTwoBinding
+import com.koziodigital.myapplication.utility.BookingViewModel
+import javax.inject.Inject
 
 class SecondFragment: BaseFragment<SecondViewModel>() {
+
+    @Inject
+    lateinit var bookingViewModelSecond: BookingViewModel
 
     override fun getVMKlazz(): Class<SecondViewModel> = SecondViewModel::class.java
 

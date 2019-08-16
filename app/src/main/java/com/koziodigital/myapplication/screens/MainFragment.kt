@@ -7,8 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.koziodigital.myapplication.base.BaseFragment
 import com.koziodigital.myapplication.databinding.FrCounterBinding
+import com.koziodigital.myapplication.utility.BookingViewModel
+import javax.inject.Inject
 
 class MainFragment: BaseFragment<MainFragmentViewModel>() {
+
+    @Inject
+    lateinit var bookingViewModelSecond: BookingViewModel
 
     override fun onAttach(context: Context) {
         super.onAttach(context)

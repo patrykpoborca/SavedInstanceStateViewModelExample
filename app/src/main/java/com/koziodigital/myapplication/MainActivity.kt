@@ -18,11 +18,11 @@ class MainActivity : BaseActivity<MainActivityViewModel>() {
         binding.vm = vm
 
 
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fragment_container, MainFragment())
-            replace(R.id.fragment_container_two, SecondFragment())
-            commit()
-        }
+//        supportFragmentManager.beginTransaction().apply {
+//            replace(R.id.fragment_container, MainFragment())
+//            replace(R.id.fragment_container_two, SecondFragment())
+//            commit()
+//        }
     }
 
     override fun getVMKlazz(): Class<MainActivityViewModel> = MainActivityViewModel::class.java

@@ -5,11 +5,12 @@ import androidx.lifecycle.MutableLiveData
 import com.koziodigital.myapplication.base.BaseViewModel
 import com.koziodigital.myapplication.utility.BookingViewModel
 import com.koziodigital.myapplication.utility.SomeRepository
+import com.koziodigital.myapplication.utility.lazyLive
 import javax.inject.Inject
 
 class MainFragmentViewModel @Inject constructor(application: Application, someRepository: SomeRepository, val bookingViewModel: BookingViewModel): BaseViewModel(application, someRepository) {
 
-    val localVal: MutableLiveData<String> = MutableLiveData("0")
+    val localVal: MutableLiveData<String> by lazyLive("localVal", "0")
 
     fun bump() {
         bookingViewModel.bump()

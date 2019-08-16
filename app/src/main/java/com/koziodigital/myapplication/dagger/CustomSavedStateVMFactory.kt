@@ -8,6 +8,7 @@ import com.koziodigital.myapplication.base.BaseViewModel
 import dagger.Lazy
 import javax.inject.Inject
 
+
 class CustomSavedStateVMFactory<VM: BaseViewModel> @Inject constructor(private val viewModel: Lazy<VM>, owner: SavedStateRegistryOwner, defaultargs: Bundle?): AbstractSavedStateViewModelFactory(owner, defaultargs) {
 
 
